@@ -1,5 +1,7 @@
 package com.epam.java.domain;
 
+import com.epam.java.EncapsulationTest;
+
 /**
  * This is a concrete (non-abstract class) that extends from an
  * abstract class and implements two interfaces.
@@ -105,5 +107,14 @@ public class Cat extends Mammal implements Pettable, Walkable{
 	public String toString(){
 		return "My name is "+name;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Cat){
+			Cat cat = (Cat)obj;
+	        return this.name.equals(cat.getName());
+		}
+		return false;
+    }
 	
 }

@@ -29,4 +29,9 @@ public class EncapsulationTest {
 		System.out.println("Name: "+cat);
 	}
 	
+	void printHello(){
+		System.out.println("Hello");
+	}
+	
+	
 }
